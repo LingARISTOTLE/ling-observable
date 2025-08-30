@@ -15,6 +15,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * 负责管理订阅者并推送数据
  *
  * @param <T> 数据类型
+ * @author Ling
  */
 public class Observable<T> {
     
