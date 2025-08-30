@@ -1,0 +1,209 @@
+2025-08-30 19:15:57.240 [restartedMain] INFO  com.ling.observable.ObservableApplication - Starting ObservableApplication using Java 19.0.2 with PID 1484 (C:\java_project\observable\target\classes started by 24707 in C:\java_project\observable)
+2025-08-30 19:15:57.249 [restartedMain] DEBUG com.ling.observable.ObservableApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-08-30 19:15:57.250 [restartedMain] INFO  com.ling.observable.ObservableApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-30 19:15:57.303 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-30 19:15:57.303 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-30 19:15:58.318 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-30 19:15:58.337 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-30 19:15:58.339 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-30 19:15:58.339 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-30 19:15:58.385 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-30 19:15:58.386 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1083 ms
+2025-08-30 19:15:58.455 [restartedMain] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - SubscriptionConsumerService 已启动，线程池已初始化
+2025-08-30 19:15:58.741 [restartedMain] INFO  org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-08-30 19:15:58.767 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-30 19:15:58.778 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-30 19:15:58.804 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-30 19:15:58.811 [restartedMain] INFO  com.ling.observable.listener.ApplicationStartupListener - 应用启动完成，开始初始化订阅消费者服务...
+2025-08-30 19:15:58.813 [restartedMain] DEBUG com.ling.observable.observable.Observable - 创建新的Observable实例
+2025-08-30 19:15:58.815 [restartedMain] DEBUG com.ling.observable.observable.service.ObservableService - 创建新的Observable实例，ID: 1
+2025-08-30 19:15:58.815 [restartedMain] INFO  com.ling.observable.listener.ApplicationStartupListener - 创建测试Observable，ID: 1
+2025-08-30 19:15:58.815 [restartedMain] DEBUG com.ling.observable.observable.Observable - 添加新数据项: 测试数据1
+2025-08-30 19:15:58.815 [restartedMain] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: 测试数据1
+2025-08-30 19:15:58.815 [restartedMain] DEBUG com.ling.observable.observable.Observable - 添加新数据项: 测试数据2
+2025-08-30 19:15:58.815 [restartedMain] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: 测试数据2
+2025-08-30 19:15:58.816 [restartedMain] DEBUG com.ling.observable.observable.Subscription - 创建新的Subscription实例
+2025-08-30 19:15:58.816 [restartedMain] DEBUG com.ling.observable.observable.Observable - 新增订阅者，当前订阅者数量: 1
+2025-08-30 19:15:58.816 [restartedMain] DEBUG com.ling.observable.observable.service.ObservableService - 为Observable创建新订阅，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:15:58.816 [restartedMain] INFO  com.ling.observable.listener.ApplicationStartupListener - 创建测试订阅，ID: 1
+2025-08-30 19:15:58.817 [restartedMain] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 已添加消费者任务: 1_1
+2025-08-30 19:15:58.817 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 开始消费订阅数据 - Observable: 1, Subscription: 1
+2025-08-30 19:15:58.817 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:15:58.817 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:15:58.820 [restartedMain] INFO  com.ling.observable.ObservableApplication - Started ObservableApplication in 2.106 seconds (process running for 3.475)
+2025-08-30 19:15:58.928 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: 测试数据1
+2025-08-30 19:15:58.928 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: 测试数据1
+2025-08-30 19:15:58.943 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: 测试数据2
+2025-08-30 19:15:58.943 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: 测试数据2
+2025-08-30 19:16:00.827 [Thread-8] DEBUG com.ling.observable.observable.Observable - 添加新数据项: 延迟测试数据3
+2025-08-30 19:16:00.827 [Thread-8] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: 延迟测试数据3
+2025-08-30 19:16:00.922 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: 延迟测试数据3
+2025-08-30 19:16:00.922 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: 延迟测试数据3
+2025-08-30 19:16:02.833 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:02.833 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:06.834 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:06.834 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:10.840 [Thread-8] DEBUG com.ling.observable.observable.Observable - 添加新数据项: 延迟测试数据4
+2025-08-30 19:16:10.840 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:10.840 [Thread-8] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: 延迟测试数据4
+2025-08-30 19:16:10.840 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:10.948 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: 延迟测试数据4
+2025-08-30 19:16:10.948 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: 延迟测试数据4
+2025-08-30 19:16:14.847 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:14.847 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:18.851 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:18.851 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:22.864 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:22.864 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:26.878 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:26.878 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:30.887 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:30.887 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:34.901 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:34.901 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:38.908 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:38.908 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:42.921 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:42.922 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:53.493 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:53.493 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:16:57.509 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:16:57.509 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:01.533 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:01.533 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:05.545 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:05.545 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:09.558 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:09.558 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:13.566 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:13.566 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:17.578 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:17.578 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:21.580 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:21.580 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:25.594 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:25.594 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:29.607 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:29.607 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:33.615 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:33.615 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:37.619 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:37.619 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:41.633 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:41.633 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:45.646 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:45.646 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:49.652 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:49.652 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:53.657 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:53.657 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:17:57.658 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:17:57.658 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:01.669 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:01.669 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:05.684 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:05.684 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:09.685 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:09.685 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:13.699 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:13.699 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:17.714 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:17.714 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:21.729 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:21.729 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:25.738 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:25.738 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:29.742 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:29.742 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:31.468 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-30 19:18:31.468 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-30 19:18:31.469 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-08-30 19:18:31.495 [http-nio-8080-exec-2] DEBUG com.ling.observable.observable.Observable - 创建新的Observable实例
+2025-08-30 19:18:31.495 [http-nio-8080-exec-2] DEBUG com.ling.observable.observable.service.ObservableService - 创建新的Observable实例，ID: 2
+2025-08-30 19:18:31.495 [http-nio-8080-exec-2] INFO  com.ling.observable.controller.ObservableController - 创建新的Observable实例，ID: 2
+2025-08-30 19:18:33.743 [pool-2-thread-1] WARN  com.ling.observable.observable.service.ObservableService - 尝试从不存在的订阅获取数据，Observable ID: 1，Subscription ID: 1
+2025-08-30 19:18:33.743 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: null
+2025-08-30 19:18:35.887 [http-nio-8080-exec-3] DEBUG com.ling.observable.observable.Subscription - 创建新的Subscription实例
+2025-08-30 19:18:35.888 [http-nio-8080-exec-3] DEBUG com.ling.observable.observable.Observable - 新增订阅者，当前订阅者数量: 2
+2025-08-30 19:18:35.888 [http-nio-8080-exec-3] DEBUG com.ling.observable.observable.service.ObservableService - 为Observable创建新订阅，Observable ID: 1，Subscription ID: 2
+2025-08-30 19:18:35.888 [http-nio-8080-exec-3] INFO  com.ling.observable.controller.ObservableController - 为Observable创建订阅，Observable ID: 1，Subscription ID: 2
+2025-08-30 19:18:36.625 [http-nio-8080-exec-4] DEBUG com.ling.observable.observable.Subscription - 创建新的Subscription实例
+2025-08-30 19:18:36.625 [http-nio-8080-exec-4] DEBUG com.ling.observable.observable.Observable - 新增订阅者，当前订阅者数量: 3
+2025-08-30 19:18:36.625 [http-nio-8080-exec-4] DEBUG com.ling.observable.observable.service.ObservableService - 为Observable创建新订阅，Observable ID: 1，Subscription ID: 3
+2025-08-30 19:18:36.625 [http-nio-8080-exec-4] INFO  com.ling.observable.controller.ObservableController - 为Observable创建订阅，Observable ID: 1，Subscription ID: 3
+2025-08-30 19:18:37.230 [http-nio-8080-exec-5] DEBUG com.ling.observable.observable.Subscription - 创建新的Subscription实例
+2025-08-30 19:18:37.230 [http-nio-8080-exec-5] DEBUG com.ling.observable.observable.Observable - 新增订阅者，当前订阅者数量: 4
+2025-08-30 19:18:37.230 [http-nio-8080-exec-5] DEBUG com.ling.observable.observable.service.ObservableService - 为Observable创建新订阅，Observable ID: 1，Subscription ID: 4
+2025-08-30 19:18:37.230 [http-nio-8080-exec-5] INFO  com.ling.observable.controller.ObservableController - 为Observable创建订阅，Observable ID: 1，Subscription ID: 4
+2025-08-30 19:19:02.698 [http-nio-8080-exec-6] DEBUG com.ling.observable.observable.Observable - 添加新数据项: Hello World
+2025-08-30 19:19:02.699 [http-nio-8080-exec-6] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: Hello World
+2025-08-30 19:19:02.699 [http-nio-8080-exec-6] INFO  com.ling.observable.controller.ObservableController - 向Observable添加数据，ID: 1，数据: Hello World，结果: true
+2025-08-30 19:19:02.798 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:02.798 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:02.799 [pool-2-thread-1] DEBUG com.ling.observable.observable.Subscription - 从队列中取出数据项: Hello World
+2025-08-30 19:19:02.799 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:02.799 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: Hello World
+2025-08-30 19:19:02.799 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:02.799 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: Hello World
+2025-08-30 19:19:16.462 [http-nio-8080-exec-7] DEBUG com.ling.observable.observable.Observable - 添加新数据项: Hello World
+2025-08-30 19:19:16.462 [http-nio-8080-exec-7] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: Hello World
+2025-08-30 19:19:16.462 [http-nio-8080-exec-7] INFO  com.ling.observable.controller.ObservableController - 向Observable添加数据，ID: 1，数据: Hello World，结果: true
+2025-08-30 19:19:16.481 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:16.481 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:16.481 [pool-2-thread-1] DEBUG com.ling.observable.observable.Subscription - 从队列中取出数据项: Hello World
+2025-08-30 19:19:16.481 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:16.481 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: Hello World
+2025-08-30 19:19:16.481 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:16.481 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: Hello World
+2025-08-30 19:19:17.013 [http-nio-8080-exec-8] DEBUG com.ling.observable.observable.Observable - 添加新数据项: Hello World
+2025-08-30 19:19:17.014 [http-nio-8080-exec-8] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: Hello World
+2025-08-30 19:19:17.014 [http-nio-8080-exec-8] INFO  com.ling.observable.controller.ObservableController - 向Observable添加数据，ID: 1，数据: Hello World，结果: true
+2025-08-30 19:19:17.042 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.042 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.042 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.042 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.042 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: Hello World
+2025-08-30 19:19:17.495 [http-nio-8080-exec-9] DEBUG com.ling.observable.observable.Observable - 添加新数据项: Hello World
+2025-08-30 19:19:17.495 [http-nio-8080-exec-9] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: Hello World
+2025-08-30 19:19:17.495 [http-nio-8080-exec-9] INFO  com.ling.observable.controller.ObservableController - 向Observable添加数据，ID: 1，数据: Hello World，结果: true
+2025-08-30 19:19:17.602 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.602 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.602 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.602 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.602 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: Hello World
+2025-08-30 19:19:17.887 [http-nio-8080-exec-10] DEBUG com.ling.observable.observable.Observable - 添加新数据项: Hello World
+2025-08-30 19:19:17.887 [http-nio-8080-exec-10] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: Hello World
+2025-08-30 19:19:17.887 [http-nio-8080-exec-10] INFO  com.ling.observable.controller.ObservableController - 向Observable添加数据，ID: 1，数据: Hello World，结果: true
+2025-08-30 19:19:17.943 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.943 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.943 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.943 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:17.943 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: Hello World
+2025-08-30 19:19:18.228 [http-nio-8080-exec-1] DEBUG com.ling.observable.observable.Observable - 添加新数据项: Hello World
+2025-08-30 19:19:18.228 [http-nio-8080-exec-1] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: Hello World
+2025-08-30 19:19:18.228 [http-nio-8080-exec-1] INFO  com.ling.observable.controller.ObservableController - 向Observable添加数据，ID: 1，数据: Hello World，结果: true
+2025-08-30 19:19:18.286 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:18.286 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:18.286 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:18.286 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello World
+2025-08-30 19:19:18.286 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: Hello World
+2025-08-30 19:19:20.486 [pool-2-thread-1] DEBUG com.ling.observable.observable.Subscription - 从队列中取出数据项: Hello World
+2025-08-30 19:19:20.486 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: Hello World
+2025-08-30 19:19:24.500 [pool-2-thread-1] DEBUG com.ling.observable.observable.Subscription - 从队列中取出数据项: Hello World
+2025-08-30 19:19:24.500 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: Hello World
+2025-08-30 19:19:28.509 [pool-2-thread-1] DEBUG com.ling.observable.observable.Subscription - 从队列中取出数据项: Hello World
+2025-08-30 19:19:28.510 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: Hello World
+2025-08-30 19:19:32.515 [pool-2-thread-1] DEBUG com.ling.observable.observable.Subscription - 从队列中取出数据项: Hello World
+2025-08-30 19:19:32.515 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: Hello World
+2025-08-30 19:19:44.317 [http-nio-8080-exec-2] DEBUG com.ling.observable.observable.Observable - 添加新数据项: Hello Ling
+2025-08-30 19:19:44.317 [http-nio-8080-exec-2] DEBUG com.ling.observable.observable.service.ObservableService - 向Observable添加数据，ID: 1，数据: Hello Ling
+2025-08-30 19:19:44.317 [http-nio-8080-exec-2] INFO  com.ling.observable.controller.ObservableController - 向Observable添加数据，ID: 1，数据: Hello Ling，结果: true
+2025-08-30 19:19:44.369 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello Ling
+2025-08-30 19:19:44.369 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello Ling
+2025-08-30 19:19:44.369 [pool-2-thread-1] DEBUG com.ling.observable.observable.Subscription - 从队列中取出数据项: Hello Ling
+2025-08-30 19:19:44.369 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello Ling
+2025-08-30 19:19:44.369 [pool-2-thread-1] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 订阅消费者 [1_1] 接收到数据: Hello Ling
+2025-08-30 19:19:44.369 [Thread-7] DEBUG com.ling.observable.observable.Subscriber - 接收到数据项: Hello Ling
+2025-08-30 19:19:44.369 [Thread-7] DEBUG com.ling.observable.observable.Observable - 推送数据项: Hello Ling
+2025-08-30 19:23:09.361 [SpringApplicationShutdownHook] INFO  com.ling.observable.listener.ApplicationShutdownListener - 应用正在关闭，开始清理订阅消费者服务资源...
+2025-08-30 19:23:09.361 [SpringApplicationShutdownHook] INFO  com.ling.observable.observable.service.SubscriptionConsumerService - 正在关闭订阅消费者服务...
